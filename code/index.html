@@ -40,6 +40,9 @@
         body {
             font-family: 'Gilroy', sans-serif;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         .text-shadow {
             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
         }
@@ -75,7 +78,7 @@
         }
     </style>
 </head>
-<body class="bg-[#0B0A26] text-white">
+<body class="bg-[#0B0A26] text-white" id="home">
 
     <!-- Hero Section -->
     <div class="relative min-h-screen flex flex-col items-center">
@@ -93,9 +96,9 @@
             <div class="flex items-center space-x-8">
                 <!-- Placeholder for Logo if any on the left -->
                 <nav class="flex space-x-6 text-lg">
-                    <a href="#" class="hover:text-yellow-300 transition-colors">Home</a>
-                    <a href="#" class="hover:text-yellow-300 transition-colors">About</a>
-                    <a href="#" class="hover:text-yellow-300 transition-colors">Liên hệ</a>
+                    <a href="#home" class="hover:text-yellow-300 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-yellow-300 transition-colors">About</a>
+                    <a href="#contact" class="hover:text-yellow-300 transition-colors">Liên hệ</a>
                 </nav>
             </div>
             <a href="#" class="bg-yellow-400 text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-300 transition-colors">
@@ -121,7 +124,7 @@
     </div>
 
     <!-- Program Info Section -->
-    <section class="py-24" style="background: linear-gradient(to bottom, #1a1a5e, #fef08a);">
+    <section id="about" class="py-24" style="background: linear-gradient(to bottom, #1a1a5e, #fef08a);">
         <div class="max-w-6xl mx-auto px-6 flex flex-row items-center">
             <!-- Text Content -->
             <div class="flex-1">
@@ -404,7 +407,7 @@
     </section>
     
     <!-- Footer -->
-    <footer class="relative" style="background: linear-gradient(to bottom, #2a2a3a, #0d2462);">
+    <footer id="contact" class="relative" style="background: linear-gradient(to bottom, #2a2a3a, #0d2462);">
         <!-- Partner Banner -->
         <div class="bg-black py-4 overflow-hidden">
             <div class="flex animate-scroll">
